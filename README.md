@@ -21,8 +21,8 @@ Welcome to the **Gaming Website** — a sleek and modern website designed for ga
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (Vanilla)**  
-*(Optionally include frameworks/libraries if you used any)*
+- **JavaScript**  
+
 
 ---
 
