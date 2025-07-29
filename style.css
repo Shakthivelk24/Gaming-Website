@@ -456,6 +456,12 @@ header {
   margin: 0 10px;
 }
 
+.stones-img {
+  position: absolute;
+  margin-top: 22%;
+  width: 500px;
+}
+
 /* BLUR EFFECT ANIMATION */
 
 .autoBlur {
@@ -512,79 +518,210 @@ header {
   }
 }
 
-@media screen and (max-width: 650px) {
-  header {
-    padding: 0 10px;
-  }
-  .head-left button {
-    display: none;
-  }
-  .head-right a {
-    font-size: 12px;
-    padding: 0 5px;
-  }
-  .hero-info {
-    left: 5%;
-  }
-  .hero-section h1 {
-    font-size: 90px;
-  }
-  .next-btn {
-    left: 25%;
-    top: 40%;
-  }
-  .about-section {
-    margin: 0;
-  }
-  .about-section h1 {
-    font-size: 50px;
-  }
-  .image-box {
-    width: 300px;
-    height: 500px;
-  }
-  .about-section h4,
-  h5 {
-    max-width: 350px;
-    text-align: center;
-  }
-  .contact-section .img1 {
-    width: 150px;
-    height: 250px;
-    right: 0;
-    top: 20px;
-  }
-  .contact-section .img2 {
-    top: 30px;
-    left: -40px;
-    width: 180px;
-    height: 180px;
-  }
-  .contact-section .img3 {
-    left: -40px;
-    bottom: 30px;
-    width: 150px;
-    height: 180px;
-  }
-  .contact-section h1 {
-    font-size: 20px;
-    max-width: 300px;
-  }
-  .footer p {
-    display: none;
+/* TABLET RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+  .hero-info h1 {
+    font-size: 100px;
   }
 
-  .footer ul {
-    margin-left: 70px;
+  .gaming-text {
+    font-size: 100px;
+    right: 10px;
   }
-  .stones-img {
-    margin-top: 80%;
-    width: 400px;
+
+  .about-section h1 {
+    font-size: 80px;
+  }
+
+  .contact-section h1 {
+    font-size: 60px;
+  }
+
+  .info-section {
+    width: 90%;
   }
 }
 
-.stones-img {
-  position: absolute;
-  margin-top: 22%;
-  width: 500px;
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .head-left button {
+    display: none;
+  }
+
+  .head-right {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .hero-info {
+    left: 20px;
+    top: 60px;
+  }
+
+  .hero-info h1 {
+    font-size: 70px;
+  }
+
+  .gaming-text {
+    font-size: 60px;
+    right: 10px;
+    bottom: 20px;
+  }
+
+  .next-btn {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .about-section {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+
+  .about-section h1 {
+    font-size: 50px;
+  }
+
+  .image-box {
+    width: 280px;
+    height: 400px;
+  }
+
+  .info-section {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card:nth-child(1) {
+    grid-column: span 1;
+  }
+
+  .card:nth-child(2) {
+    grid-row: span 1;
+    height: 40vh;
+  }
+
+  .card h1 {
+    font-size: 40px;
+    max-width: 200px;
+  }
+
+  .card p {
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .contact-section {
+    padding: 0 15px;
+  }
+
+  .contact-section h1 {
+    font-size: 35px;
+    max-width: 300px;
+  }
+
+  .contact-section .img1 {
+    width: 120px;
+    height: 200px;
+    right: 10px;
+  }
+
+  .contact-section .img2 {
+    width: 100px;
+    height: 100px;
+    left: 10px;
+  }
+
+  .contact-section .img3 {
+    width: 120px;
+    height: 120px;
+    left: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer p:first-child {
+    display: none;
+  }
+
+  .stones-img {
+    width: 300px;
+    margin-top: 50%;
+  }
+}
+
+/* SMALL MOBILE RESPONSIVENESS */
+@media screen and (max-width: 480px) {
+  .hero-info h1 {
+    font-size: 50px;
+  }
+
+  .gaming-text {
+    font-size: 40px;
+  }
+
+  .about-section h1 {
+    font-size: 35px;
+  }
+
+  .contact-section h1 {
+    font-size: 25px;
+  }
+
+  .image-box {
+    width: 250px;
+    height: 350px;
+  }
+
+  .next-btn {
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    font-size: 16px;
+  }
+
+  .card h1 {
+    font-size: 30px;
+  }
+
+  .stones-img {
+    width: 250px;
+  }
+}
+
+/* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1400px) {
+  .hero-info h1 {
+    font-size: 140px;
+  }
+
+  .gaming-text {
+    font-size: 140px;
+  }
+
+  .about-section h1 {
+    font-size: 120px;
+  }
+
+  .contact-section h1 {
+    font-size: 80px;
+  }
 }
